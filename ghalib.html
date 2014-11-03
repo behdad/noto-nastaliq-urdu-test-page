@@ -144,6 +144,7 @@ Here it is in action:
 <style>
 .poetryJustifyLast td {
 	text-align-last: justify;
+	-o-text-align-last: justify;
 	-ms-text-align-last: justify;
 	-moz-text-align-last: justify;
 	-webkit-text-align-last: justify;
@@ -217,20 +218,21 @@ http://stackoverflow.com/questions/4771304/justify-the-last-line-of-a-div
 Putting it all together
 
 <style>
-.poetryJustifyCSS3 td {
+.poetryJustifyCSS3All td {
 	text-align: justify;
 	text-align-last: justify;
+	-o-text-align-last: justify;
 	-ms-text-align-last: justify;
 	-moz-text-align-last: justify;
 	-webkit-text-align-last: justify;
 }
-.poetryJustifyCSS3 td:after{
+.poetryJustifyCSS3All td:after{
 	content: "";
 	display: inline-block;
 	width: 100%;
 }
-.poetryJustifyCSS3 td:nth-child(2n+1) { padding-left: 1em; }
-.poetryJustifyCSS3 td:nth-child(2n+0) { padding-right: 1em; }
+.poetryJustifyCSS3All td:nth-child(2n+1) { padding-left: 1em; }
+.poetryJustifyCSS3All td:nth-child(2n+0) { padding-right: 1em; }
 </style>
 <table lang="ur" class="poetryJustifyCSS3">
 <tr><td>حسنِ مہ گرچہ بہ ہنگامِ کمال اچّھا ہے</td>
