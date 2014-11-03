@@ -23,6 +23,8 @@ table {
 <p>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
 
+http://wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%DB%92#206
+
 Align center.
 
 <style>
@@ -123,12 +125,26 @@ Lets try forcing justification.
 <td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے<span class="a"> </span><span class="b">&nbsp;</span</td></tr>
 </table>
 
+<h2>text-align-last</h2>
+A cleaner approach is to use CSS
+<code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last">text-align-last</a></code>,
+which for all we care about, is designed <i>exactly</i> to do this.
+Unfortunately its support across browsers and CSS versions has been flaky.
+It started IE-only and was added to CSS 3 draft years ago.
+These days looks like Firefox supports it prefixed,
+Chrome is <a href="https://bugs.webkit.org/show_bug.cgi?id=76173">supposed to support it</a>
+but doesn't work for me, and it was moved from CSS 3 to
+<a href="http://dev.w3.org/csswg/css-text-4/#text-align-last">CSS 4</a>.
 <p>
-A cleaner approach:
+<a href="http://www.quirksmode.org/css/text/textalignlast.html">Here</a> is a test page for
+<code>text-align-last</code> I found on the net.  Let me know if you find any surprises.
+<p>
+Here it is in action:
 
 <style>
 .poetryJustifyLast td {
 	text-align-last: justify;
+	-ms-text-align-last: justify;
 	-moz-text-align-last: justify;
 	-webkit-text-align-last: justify;
 }
@@ -160,6 +176,7 @@ A cleaner approach:
 
 <p>
 Another clunky version.
+http://stackoverflow.com/questions/4771304/justify-the-last-line-of-a-div
 
 <style>
 .poetryJustifyCSS3 td {
@@ -203,6 +220,7 @@ Putting it all together
 .poetryJustifyCSS3 td {
 	text-align: justify;
 	text-align-last: justify;
+	-ms-text-align-last: justify;
 	-moz-text-align-last: justify;
 	-webkit-text-align-last: justify;
 }
