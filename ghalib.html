@@ -123,6 +123,119 @@ Lets try forcing justification.
 <td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے<span class="a"> </span><span class="b">&nbsp;</span</td></tr>
 </table>
 
+<p>
+A cleaner approach:
+
+<style>
+.poetryJustifyLast td {
+	text-align-last: justify;
+	-moz-text-align-last: justify;
+	-webkit-text-align-last: justify;
+}
+.poetryJustifyLast td:nth-child(2n+1) { padding-left: 1em; }
+.poetryJustifyLast td:nth-child(2n+0) { padding-right: 1em; }
+</style>
+<table lang="ur" class="poetryJustifyLast">
+<tr><td>حسنِ مہ گرچہ بہ ہنگامِ کمال اچّھا ہے</td>
+<td>اس سے میرا مہِ خورشید جمال اچّھا ہے</td></tr>
+<tr><td>بوسہ دیتے نہیں اور دل پہ ہے ہر لحظہ نگاہ</td>
+<td>جی میں کہتے ہیں کہ مفت آئے تو مال اچّھا ہے</td></tr>
+<tr><td>اور بازار سے لے آئے اگر ٹوٹ گیا</td>
+<td>ساغرِ جم سے مرا جامِ سفال اچّھا ہے</td></tr>
+<tr><td>بے طلب دیں تو مزہ اس میں سوا ملتا ہے</td>
+<td>وہ گدا جس کو نہ ہو خوۓ سوال اچّھا ہے</td></tr>
+<tr><td>ان کے دیکھے سے جو آ جاتی ہے منہ پر رونق</td>
+<td>وہ سمجھتے ہیں کہ بیمار کا حال اچّھا ہے</td></tr>
+<tr><td>دیکھیے پاتے ہیں عشّاق بتوں سے کیا فیض</td>
+<td>اک برہمن نے کہا ہے کہ یہ سال اچّھا ہے</td></tr>
+<tr><td>ہم سخن تیشے نے فرہاد کو شیریں سے کیا</td>
+<td>جس طرح کا کہ کسی میں ہو کمال اچّھا ہے</td></tr>
+<tr><td>قطرہ دریا میں جو مل جائے تو دریا ہو جائے</td>
+<td>کام اچّھا ہے وہ، جس کا کہ مآل اچّھا ہے</td></tr>
+<tr><td>خضر سلطاں کو رکھے خالقِ اکبر سر سبز</td>
+<td>شاہ کے باغ میں یہ تازہ نہال اچّھا ہے</td></tr>
+<tr><td>ہم کو معلوم ہے جنّت کی حقیقت لیکن</td>
+<td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے</td></tr>
+</table>
+
+<p>
+Another clunky version.
+
+<style>
+.poetryJustifyCSS3 td {
+	text-align: justify;
+}
+.poetryJustifyCSS3 td:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+.poetryJustifyCSS3 td:nth-child(2n+1) { padding-left: 1em; }
+.poetryJustifyCSS3 td:nth-child(2n+0) { padding-right: 1em; }
+</style>
+<table lang="ur" class="poetryJustifyCSS3">
+<tr><td>حسنِ مہ گرچہ بہ ہنگامِ کمال اچّھا ہے</td>
+<td>اس سے میرا مہِ خورشید جمال اچّھا ہے</td></tr>
+<tr><td>بوسہ دیتے نہیں اور دل پہ ہے ہر لحظہ نگاہ</td>
+<td>جی میں کہتے ہیں کہ مفت آئے تو مال اچّھا ہے</td></tr>
+<tr><td>اور بازار سے لے آئے اگر ٹوٹ گیا</td>
+<td>ساغرِ جم سے مرا جامِ سفال اچّھا ہے</td></tr>
+<tr><td>بے طلب دیں تو مزہ اس میں سوا ملتا ہے</td>
+<td>وہ گدا جس کو نہ ہو خوۓ سوال اچّھا ہے</td></tr>
+<tr><td>ان کے دیکھے سے جو آ جاتی ہے منہ پر رونق</td>
+<td>وہ سمجھتے ہیں کہ بیمار کا حال اچّھا ہے</td></tr>
+<tr><td>دیکھیے پاتے ہیں عشّاق بتوں سے کیا فیض</td>
+<td>اک برہمن نے کہا ہے کہ یہ سال اچّھا ہے</td></tr>
+<tr><td>ہم سخن تیشے نے فرہاد کو شیریں سے کیا</td>
+<td>جس طرح کا کہ کسی میں ہو کمال اچّھا ہے</td></tr>
+<tr><td>قطرہ دریا میں جو مل جائے تو دریا ہو جائے</td>
+<td>کام اچّھا ہے وہ، جس کا کہ مآل اچّھا ہے</td></tr>
+<tr><td>خضر سلطاں کو رکھے خالقِ اکبر سر سبز</td>
+<td>شاہ کے باغ میں یہ تازہ نہال اچّھا ہے</td></tr>
+<tr><td>ہم کو معلوم ہے جنّت کی حقیقت لیکن</td>
+<td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے</td></tr>
+</table>
+
+<p>
+Putting it all together
+
+<style>
+.poetryJustifyCSS3 td {
+	text-align: justify;
+	text-align-last: justify;
+	-moz-text-align-last: justify;
+	-webkit-text-align-last: justify;
+}
+.poetryJustifyCSS3 td:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+.poetryJustifyCSS3 td:nth-child(2n+1) { padding-left: 1em; }
+.poetryJustifyCSS3 td:nth-child(2n+0) { padding-right: 1em; }
+</style>
+<table lang="ur" class="poetryJustifyCSS3">
+<tr><td>حسنِ مہ گرچہ بہ ہنگامِ کمال اچّھا ہے</td>
+<td>اس سے میرا مہِ خورشید جمال اچّھا ہے</td></tr>
+<tr><td>بوسہ دیتے نہیں اور دل پہ ہے ہر لحظہ نگاہ</td>
+<td>جی میں کہتے ہیں کہ مفت آئے تو مال اچّھا ہے</td></tr>
+<tr><td>اور بازار سے لے آئے اگر ٹوٹ گیا</td>
+<td>ساغرِ جم سے مرا جامِ سفال اچّھا ہے</td></tr>
+<tr><td>بے طلب دیں تو مزہ اس میں سوا ملتا ہے</td>
+<td>وہ گدا جس کو نہ ہو خوۓ سوال اچّھا ہے</td></tr>
+<tr><td>ان کے دیکھے سے جو آ جاتی ہے منہ پر رونق</td>
+<td>وہ سمجھتے ہیں کہ بیمار کا حال اچّھا ہے</td></tr>
+<tr><td>دیکھیے پاتے ہیں عشّاق بتوں سے کیا فیض</td>
+<td>اک برہمن نے کہا ہے کہ یہ سال اچّھا ہے</td></tr>
+<tr><td>ہم سخن تیشے نے فرہاد کو شیریں سے کیا</td>
+<td>جس طرح کا کہ کسی میں ہو کمال اچّھا ہے</td></tr>
+<tr><td>قطرہ دریا میں جو مل جائے تو دریا ہو جائے</td>
+<td>کام اچّھا ہے وہ، جس کا کہ مآل اچّھا ہے</td></tr>
+<tr><td>خضر سلطاں کو رکھے خالقِ اکبر سر سبز</td>
+<td>شاہ کے باغ میں یہ تازہ نہال اچّھا ہے</td></tr>
+<tr><td>ہم کو معلوم ہے جنّت کی حقیقت لیکن</td>
+<td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے</td></tr>
+</table>
 
 </body>
 </html>
