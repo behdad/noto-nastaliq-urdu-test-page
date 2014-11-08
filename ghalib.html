@@ -25,7 +25,9 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 http://wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%DB%92#206
 
-Align center.
+<h2>Center-aligned</h2>
+The easiest way to set a two-column piece of poetry is to center-align each column.
+This is how that looks like:
 
 <style>
 .poetryAlignCenter td { text-align: center; }
@@ -56,7 +58,10 @@ Align center.
 </table>
 
 <p>
-Lets align the sides.
+Not very pleasing, but easiest to set.
+
+<h2>Side-aligned</h2>
+A slight improvement would be to align the sides:
 
 <style>
 .poetryAlignSides td:nth-child(2n+1) { text-align: right; padding-left: .5em; }
@@ -85,8 +90,13 @@ Lets align the sides.
 <td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے</td></tr>
 </table>
 
+<p>
+I personally find it hard to call this an improvement, specially with this font.
+But it is a valid approach, and documented here for the sake of completeness
+and visual comparison.
+
 <h2>text-align-last</h2>
-A cleaner approach is to use CSS
+The more natural way to justify poetry is to use the CSS
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last">text-align-last</a></code>,
 which for all we care about, is designed <i>exactly</i> to do this.
 Unfortunately its support across browsers and CSS versions has been flaky.
@@ -105,6 +115,7 @@ Here it is in action:
 
 <style>
 .poetryJustifyLast td {
+	text-align: justify;
 	text-align-last: justify;
 	-o-text-align-last: justify;
 	-ms-text-align-last: justify;
@@ -139,10 +150,10 @@ Here it is in action:
 
 <h2>Polyfill</h2>
 Given that <code>text-justify-last</code> does not quite work, many people
-have tried to achieve the effect using CSS2 and CSS3.  I did just that over
-ten years ago myself on <a href="http://rira.ir/">RiRa</a>.
+have tried to achieve the same effect using CSS2 and CSS3.  I did just that
+over ten years ago myself on <a href="http://rira.ir/">RiRa</a>.
 <p>
-Back then, there was no CSS3 and the
+Back then, the
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after">::after</a></code>
 pseudo-element was not widely supported, if defined at all.
 My solution involved adding a span at the end of each verse, and thus
@@ -153,7 +164,7 @@ the process.
 <p>
 Times have changed since, and I found a much cleaner
 <a href="http://stackoverflow.com/questions/4771304/justify-the-last-line-of-a-div">implementation</a>
-of this same idea that does not involve modifying the HTML.  And it seems to work
+of the same idea that does not involve modifying the HTML.  And it seems to work
 very well across recent versions of Chrome, Firefox, and IE.  Here it is:
 
 <style>
