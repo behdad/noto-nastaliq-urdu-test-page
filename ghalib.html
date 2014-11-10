@@ -7,6 +7,8 @@ body {
 	width: 45em;
 	text-align: justify;
 	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 10em;
 }
 *[lang=ur] {
 	direction: rtl;
@@ -28,17 +30,19 @@ Last updated: November 10, 2014
 
 <h2>Introduction</h2>
 <a href="https://en.wikipedia.org/wiki/Nasta%CA%BFl%C4%ABq_script">Nastaliq</a> is a calligraphic
-style of writing the Perso-Arabic script commonly used for writing Persian, Turkic, Urdu, etc.
-While in Persian, Nastaliq is used for the most part as a display / titling face, in Urdu it is
-the preferred body style, and Urdu newspapers are set in Nastaliq to this day.
+style of writing the Perso-Arabic script commonly used for writing Urdu, Punjabi, Kashmiri, and Persian,
+among others.
+Nastaliq is the preferred style for <a href="https://en.wikipedia.org/wiki/Body_text">body text</a>
+and is <a href="https://www.google.com/search?q=urdu+newspaper">used</a> to typeset newspapers to this day.
+While in Persian, Nastaliq is used, for the most part, as a display / titling face.
 <p>
-There have been Nastaliq (both Urdu- and Persian-style) OpenType fonts available on the internet
+There have been Nastaliq OpenType fonts (both Urdu- and Persian-style) available on the internet
 for <a href="http://www.pango.org/ScriptGallery">quite a few years</a>.  Recently, at Google we
-released a draft of Noto Nastaliq Urdu font as part of the expansion of the
+released a draft version of the &ldquo;Noto Nastaliq Urdu&rdquo; font as part of the expansion of the
 <a href="http://google.com/get/noto">Noto fonts</a> project.
 This page showcases the Noto Nastaliq Urdu Draft font.
 <p>
-With the introduction out of the way, here's a verse of poetry from
+Here is a verse of poetry from
 <a href="https://en.wikipedia.org/wiki/Ghalib">Ghalib</a> using the webfont:
 <p lang="ur" align="center">
 اور بازار سے لے آئے اگر ٹوٹ گیا<br>
@@ -46,61 +50,60 @@ With the introduction out of the way, here's a verse of poetry from
 </p>
 
 <h2>Where to get</h2>
-This draft version of the font can be downloaded from the <a href="http://www.google.com/get/noto/">Noto homepage</a>
-or directly from the <a href="https://noto.googlecode.com/git/fonts/alpha/NotoNastaliqUrduDraft.ttf">Noto repository</a>,
-or better yet, is also <a href="http://www.google.com/fonts/earlyaccess#Noto+Nastaliq+Urdu+Draft">available as a webfont</a>
+The draft version of the font can be downloaded from the <a href="http://www.google.com/get/noto/">Noto homepage</a>
+or directly from the <a href="https://noto.googlecode.com/git/fonts/alpha/NotoNastaliqUrduDraft.ttf">Noto repository</a>.
+It is also <a href="http://www.google.com/fonts/earlyaccess#Noto+Nastaliq+Urdu+Draft">available as a webfont</a>
 on Google Fonts Early Access.
 <p>
 I will update this page when the final version of the font is released.
-Please report any issues you might find with the font <a href="https://code.google.com/p/noto/issues/entry">here</a>.
-The list of currently known issues is <a href="https://code.google.com/p/noto/issues/list?can=2&q=Noto+Nastaliq"</a>here</a>.
+Please report any issues you might find with the font at <a href="https://code.google.com/p/noto/issues/entry">https://code.google.com/p/noto/issues/entry</a>.
+The list of currently known issues is at the <a href="https://code.google.com/p/noto/issues/list?can=2&q=Noto+Nastaliq"</a>Noto issue tracker</a>.
 
 <h2>Compatibility</h2>
 This section is currently up to date as of November 10, 2014.
 <p>
 The font should render correctly on most <i>modern</i> browsers.
 Older versions of all browsers might be broken, and there is not much that can be done about
-them.  This includes old Android Browser (as opposed to Chrome on Android).
+them.  This includes the old Android Browser (as opposed to Chrome on Android).
 
 <h3>Google Chrome</h3>
-Recent versions of Chrome should have no problem on platforms other than the Mac.
-For Mac, Chrome 39 and before suffer from severe
+Recent versions of Chrome should not have any problems on platforms other than OS X.
+Chrome Mac 39 and earlier suffer from severe
 <a href="https://code.google.com/p/noto/issues/detail?id=187&q=Noto%20Nastaliq">positioning issues</a>
 that make the font practically unusable.
 This has been <a href="https://code.google.com/p/chromium/issues/detail?id=352736">fixed</a>
 in Chrome 40 already, and should get out to users over time.  In the mean time, you can try the Chrome Mac
 <a href="https://www.google.com/chrome/browser/?platform=mac&extra=devchannel">Dev channel</a>.
+Chrome on iOS might suffer from the same problems as Safari (see below), I have not tested that.
 
 <h3>Firefox</h3>
-Firefox 33 and before render fine but freeze for a few seconds when loading the font.
+Firefox 33 and earlier render correctly but freeze for a few seconds when loading the font.
 That <a href="https://code.google.com/p/noto/issues/detail?id=186">bug</a>
-is fixed in <a href="https://www.mozilla.org/en-US/firefox/channel/#beta">Firefox 34 Beta</a> and will
-be in the Firefox 34 stable release on November 25, 2014.
+is fixed in <a href="https://www.mozilla.org/en-US/firefox/channel/#beta">Firefox 34 Beta</a>,
+to be released as stable on November 25, 2014.
 
 <h3>Internet Explorer</h3>
-IE 11 works just fine in my testing.  No idea about earlier versions.
+IE 11 works just fine in my testing.  I have not tested other versions.
 
 <h3>Safari</h3>
 Safari suffers from the same
 <a href="https://code.google.com/p/noto/issues/detail?id=187&q=Noto%20Nastaliq">positioning issues</a>
-that Chrome Mac did.
-This is being worked on <a href="https://bugs.webkit.org/show_bug.cgi?id=138213">here</a>,
-but expect it to take a while to be fixed and delivered to users.
+that Chrome Mac used to (discussed above).
+This bug is being tracked <a href="https://bugs.webkit.org/show_bug.cgi?id=138213">here</a>,
+but I expect it to take a while to get fixed and delivered to users.
 
 
 <h2>Typesetting poetry for the web</h2>
-I have been interested in setting Persian poetry on the web since at least 2002.
-<a href="http://rira.ir/?page=view&mod=classicpoems&obj=poem&id=1">This</a> is a sample of that, which
-does not use a Nastaliq font.  In both Persian and Urdu traditional poetry, Nastaliq is the preferred
-style of writing, and the poem is set in two columns of justified text with the same column widths.
+I have been interested in typesetting Persian poetry on the web since at least 2002.
+In Urdu and Persian classical poetry, Nastaliq is the preferred style,
+and poems are set in two columns of justified text with the same column widths.
 <p>
-Lets apply Noto Nastaliq Urdu to this problem.  In the rest of this section I'm
-using a full sonnet from Ghalib, available
-<a href="http://wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%DB%92#206">here</a>.
+In the rest of this section I'm using a full sonnet from Ghalib, available from
+<a href="http://wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%DB%92#206">Wikisource</a>.
 
 <h3>Center-aligned</h3>
-The easiest way to set a two-column piece of poetry is to center-align each column.
-This is how that looks like:
+The easiest way to set a two-column poem is to center-align each column.
+This is how it would look like:
 
 <style>
 .poetryAlignCenter td { text-align: center; }
@@ -131,7 +134,7 @@ This is how that looks like:
 </table>
 
 <p>
-Not very pleasing, but easiest to set.  At least, if your lucky, the font works.
+It is not very pleasing, but easiest to set.  At least, if you are lucky, the font works.
 
 <h3>Side-aligned</h3>
 A slight improvement would be to align the sides:
@@ -164,7 +167,7 @@ A slight improvement would be to align the sides:
 </table>
 
 <p>
-I personally find it hard to call this an improvement, specially with this font.
+I personally find it hard to call this an improvement, especially with this font.
 But it is a valid approach, and documented here for the sake of completeness
 and visual comparison.
 
@@ -178,7 +181,8 @@ It started IE-only and was added to CSS 3 draft years ago.
 These days looks like Firefox supports it prefixed,
 I could not get Chrome or Safari to work, even though they are
 <a href="https://bugs.webkit.org/show_bug.cgi?id=76173">supposed to support it</a> to differing extents.
-IE works, but only when text-align:justify is used.  This caught me by surprise, but that is what it does.
+IE works, but only when <code>text-align:justify</code> is used.
+This caught me by surprise, but that is what it does.
 <p>
 For what it's worth, this property was moved from CSS 3 to
 <a href="http://dev.w3.org/csswg/css-text-4/#text-align-last">CSS 4</a>.
@@ -224,7 +228,7 @@ Here it is in action:
 <h3>Polyfill</h3>
 Given that <code>text-justify-last</code> does not quite work, many people
 have tried to achieve the same effect using CSS2 and CSS3.  I did just that
-over ten years ago myself on <a href="http://rira.ir/?page=view&mod=classicpoems&obj=poem&id=1">RiRa</a>.
+over ten years ago on <a href="http://rira.ir/?page=view&mod=classicpoems&obj=poem&id=1">RiRa</a>.
 <p>
 Back then, the
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after">::after</a></code>
@@ -277,8 +281,8 @@ very well across recent versions of Chrome, Firefox, and IE.  Here it is:
 
 <p>
 This one looks gorgeous on every browser that supports the font properly.
-This can be combined with the text-align-last for good measure and forward
-compatibility, but that is left as an exercise to the developer.
+This can be combined with the <code>text-align-last</code> for good measure and
+forward compatibility, but that is left as an exercise to the developer.
 
 <h2>Single-column</h2>
 One problem left unsolved in the previous section is that the two columns do not
@@ -314,11 +318,12 @@ illustration purposes.
 </table>
 
 <h2>Conclusions</h2>
-That's it.  I hope you agree that this font looks great for typesetting Urdu poetry.
-I can't wait till we have a high-quality Persian-style Nastaliq font available for
-the web to enjoy, but until then, I hope Urdu website owners enjoy the Urdu font.
+I hope you agree that this font looks great for typesetting Urdu poetry.
+I cannot wait until a high-quality Persian-style Nastaliq font becomes available for
+the web to enjoy.  But until then, I hope web authors enjoy our Urdu Nastaliq font.
 
 <h2>Disclaimer</h2>
-As of November 2014, author works for Google at the Font and Text Rendering, Google Internationalization Engineering team.
+As of November 2014, the author works at the Font and Text Rendering team, Google Internationalization Engineering.
+
 </body>
 </html>
