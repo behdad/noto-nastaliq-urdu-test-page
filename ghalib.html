@@ -17,15 +17,88 @@ table {
 	text-align: center;
 }
 </style>
+<title>Noto Nastaliq Urdu test page</title>
 </head>
 <body>
 
+<h1>Noto Nastaliq Urdu test page</h1>
+<b><a href="http://behdad.org/">Behdad Esfahbod</a></b><br>
+Originally written: November 10, 2014<br>
+Last updated: November 10, 2014
+
+<h2>Introduction</h2>
+<a href="https://en.wikipedia.org/wiki/Nasta%CA%BFl%C4%ABq_script">Nastaliq</a> is a calligraphic
+style of writing the Perso-Arabic script commonly used for writing Persian, Turkic, Urdu, etc.
+While in Persian, Nastaliq is used for the most part as a display / titling face, in Urdu it is
+the preferred body style, and Urdu newspapers are set in Nastaliq to this day.
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+There have been Nastaliq (both Urdu- and Persian-style) OpenType fonts available on the internet
+for <a href="http://www.pango.org/ScriptGallery">quite a few years</a>.  Recently, at Google we
+released a draft of Noto Nastaliq Urdu font as part of the expansion of the
+<a href="http://google.com/get/noto">Noto fonts</a> project.
+This page showcases the Noto Nastaliq Urdu Draft font.
+<p>
+With the introduction out of the way, here's a verse of poetry from
+<a href="https://en.wikipedia.org/wiki/Ghalib">Ghalib</a> using the webfont:
+<p lang="ur" align="center">
+اور بازار سے لے آئے اگر ٹوٹ گیا<br>
+ساغرِ جم سے مرا جامِ سفال اچّھا ہے
+</p>
 
-http://wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%DB%92#206
+<h2>Where to get</h2>
+This draft version of the font can be downloaded from the <a href="http://www.google.com/get/noto/">Noto homepage</a>
+or directly from the <a href="https://noto.googlecode.com/git/fonts/alpha/NotoNastaliqUrduDraft.ttf">Noto repository</a>,
+or better yet, is also <a href="http://www.google.com/fonts/earlyaccess#Noto+Nastaliq+Urdu+Draft">available as a webfont</a>
+on Google Fonts Early Access.
+<p>
+I will update this page when the final version of the font is released.
+Please report any issues you might find with the font <a href="https://code.google.com/p/noto/issues/entry">here</a>.
+The list of currently known issues is <a href="https://code.google.com/p/noto/issues/list?can=2&q=Noto+Nastaliq"</a>here</a>.
 
-<h2>Center-aligned</h2>
+<h2>Compatibility</h2>
+This section is currently up to date as of November 10, 2014.
+<p>
+The font should render correctly on most <i>modern</i> browsers.
+Older versions of all browsers might be broken, and there is not much that can be done about
+them.  This includes old Android Browser (as opposed to Chrome on Android).
+
+<h3>Google Chrome</h3>
+Recent versions of Chrome should have no problem on platforms other than the Mac.
+For Mac, Chrome 39 and before suffer from severe
+<a href="https://code.google.com/p/noto/issues/detail?id=187&q=Noto%20Nastaliq">positioning issues</a>
+that make the font practically unusable.
+This has been <a href="https://code.google.com/p/chromium/issues/detail?id=352736">fixed</a>
+in Chrome 40 already, and should get out to users over time.  In the mean time, you can try the Chrome Mac
+<a href="https://www.google.com/chrome/browser/?platform=mac&extra=devchannel">Dev channel</a>.
+
+<h3>Firefox</h3>
+Firefox 33 and before render fine but freeze for a few seconds when loading the font.
+That <a href="https://code.google.com/p/noto/issues/detail?id=186">bug</a>
+is fixed in <a href="https://www.mozilla.org/en-US/firefox/channel/#beta">Firefox 34 Beta</a> and will
+be in the Firefox 34 stable release on November 25, 2014.
+
+<h3>Internet Explorer</h3>
+IE 11 works just fine in my testing.  No idea about earlier versions.
+
+<h3>Safari</h3>
+Safari suffers from the same
+<a href="https://code.google.com/p/noto/issues/detail?id=187&q=Noto%20Nastaliq">positioning issues</a>
+that Chrome Mac did.
+This is being worked on <a href="https://bugs.webkit.org/show_bug.cgi?id=138213">here</a>,
+but expect it to take a while to be fixed and delivered to users.
+
+
+<h2>Typesetting poetry for the web</h2>
+I have been interested in setting Persian poetry on the web since at least 2002.
+<a href="http://rira.ir/?page=view&mod=classicpoems&obj=poem&id=1">This</a> is a sample of that, which
+does not use a Nastaliq font.  In both Persian and Urdu traditional poetry, Nastaliq is the preferred
+style of writing, and the poem is set in two columns of justified text with the same column widths.
+<p>
+Lets apply Noto Nastaliq Urdu to this problem.  In the rest of this section I'm
+using a full sonnet from Ghalib, available
+<a href="http://wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%DB%92#206">here</a>.
+
+<h3>Center-aligned</h3>
 The easiest way to set a two-column piece of poetry is to center-align each column.
 This is how that looks like:
 
@@ -58,9 +131,9 @@ This is how that looks like:
 </table>
 
 <p>
-Not very pleasing, but easiest to set.
+Not very pleasing, but easiest to set.  At least, if your lucky, the font works.
 
-<h2>Side-aligned</h2>
+<h3>Side-aligned</h3>
 A slight improvement would be to align the sides:
 
 <style>
@@ -95,22 +168,22 @@ I personally find it hard to call this an improvement, specially with this font.
 But it is a valid approach, and documented here for the sake of completeness
 and visual comparison.
 
-<h2>text-align-last</h2>
+<h3>text-align-last</h3>
 The more natural way to justify poetry is to use the CSS
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last">text-align-last</a></code>,
 which for all we care about, is designed <i>exactly</i> to do this.
 Unfortunately its support across browsers and CSS versions has been flaky.
+<p>
 It started IE-only and was added to CSS 3 draft years ago.
 These days looks like Firefox supports it prefixed,
-Chrome is <a href="https://bugs.webkit.org/show_bug.cgi?id=76173">supposed to support it</a>
-but does not work for me, prefixed or not.
-And I cannot get IE to behave anymore, prefixed or not.
-And it was moved from CSS 3 to
-<a href="http://dev.w3.org/csswg/css-text-4/#text-align-last">CSS 4</a>.
-So, for now I think it is safe to file it away, to be reconsidered later.
+I could not get Chrome or Safari to work, even though they are
+<a href="https://bugs.webkit.org/show_bug.cgi?id=76173">supposed to support it</a> to differing extents.
+IE works, but only when text-align:justify is used.  This caught me by surprise, but that is what it does.
 <p>
-<a href="http://www.quirksmode.org/css/text/textalignlast.html">Here</a> is a test page for
-<code>text-align-last</code> I found on the net.  Let me know if you find any surprises.
+For what it's worth, this property was moved from CSS 3 to
+<a href="http://dev.w3.org/csswg/css-text-4/#text-align-last">CSS 4</a>.
+So, for now I think it is a useful fallback, but does not work everywhere.
+<p>
 Here it is in action:
 
 <style>
@@ -148,10 +221,10 @@ Here it is in action:
 <td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے</td></tr>
 </table>
 
-<h2>Polyfill</h2>
+<h3>Polyfill</h3>
 Given that <code>text-justify-last</code> does not quite work, many people
 have tried to achieve the same effect using CSS2 and CSS3.  I did just that
-over ten years ago myself on <a href="http://rira.ir/">RiRa</a>.
+over ten years ago myself on <a href="http://rira.ir/?page=view&mod=classicpoems&obj=poem&id=1">RiRa</a>.
 <p>
 Back then, the
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after">::after</a></code>
@@ -202,5 +275,50 @@ very well across recent versions of Chrome, Firefox, and IE.  Here it is:
 <td>دل کے خوش رکھنے کو غالب یہ خیال اچّھا ہے</td></tr>
 </table>
 
+<p>
+This one looks gorgeous on every browser that supports the font properly.
+This can be combined with the text-align-last for good measure and forward
+compatibility, but that is left as an exercise to the developer.
+
+<h2>Single-column</h2>
+One problem left unsolved in the previous section is that the two columns do not
+necessarily have the same width.  One way I <i>fixed</i> this in RiRa before was
+to add a small JavaScript snippet to take the maximum of the two column widths and
+apply it to both.  That's a valid hack (short of CSS adding such constructs) but
+left out here because I do not want to be the one promoting it.
+<p>
+An alternative some might prefer, specially for narrow columns or shorter poems
+is to just use a single column.  I personally think for this test poem two columns
+looks much better.  So for this test case I cut it off at eight lines for
+illustration purposes.
+
+<style>
+.poetrySingleColumnJustifyCSS3 td {
+	text-align: justify;
+}
+.poetrySingleColumnJustifyCSS3 td::after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+</style>
+<table lang="ur" class="poetrySingleColumnJustifyCSS3">
+<tr><td>حسنِ مہ گرچہ بہ ہنگامِ کمال اچّھا ہے</td></tr>
+<tr><td>اس سے میرا مہِ خورشید جمال اچّھا ہے</td></tr>
+<tr><td>بوسہ دیتے نہیں اور دل پہ ہے ہر لحظہ نگاہ</td></tr>
+<tr><td>جی میں کہتے ہیں کہ مفت آئے تو مال اچّھا ہے</td></tr>
+<tr><td>اور بازار سے لے آئے اگر ٹوٹ گیا</td></tr>
+<tr><td>ساغرِ جم سے مرا جامِ سفال اچّھا ہے</td></tr>
+<tr><td>بے طلب دیں تو مزہ اس میں سوا ملتا ہے</td></tr>
+<tr><td>وہ گدا جس کو نہ ہو خوۓ سوال اچّھا ہے</td></tr>
+</table>
+
+<h2>Conclusions</h2>
+That's it.  I hope you agree that this font looks great for typesetting Urdu poetry.
+I can't wait till we have a high-quality Persian-style Nastaliq font available for
+the web to enjoy, but until then, I hope Urdu website owners enjoy the Urdu font.
+
+<h2>Disclaimer</h2>
+As of November 2014, author works for Google at the Font and Text Rendering, Google Internationalization Engineering team.
 </body>
 </html>
